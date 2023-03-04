@@ -1,0 +1,10 @@
+pipeline{
+  agent any
+  stages{
+    stage('Git check'){
+      steps{
+        git branch: 'main', url: 'https://github.com/Bha298/devops1231.git'
+      }
+    }
+  }
+}
